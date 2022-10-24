@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- <style>
+    in-file styles
+    * {
+        /* color: green; */
+        color: green;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+
+    }
+
+    body {
+
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* id selector */ 
+    #contact {
+        background-color: brown;
+    }
+
+    p {
+
+        color: rgb(0, 26, 255);
+    }
+    /* id selector */ 
+    .my-ps {
+
+        background-color: peru;
+    }
+
+    .my-width {
+
+    width: 100px; 
+    }
+
+    li {
+
+        color: blueviolet;
+    }
+
+    footer {
+        background-color:tan;
+        border-radius: 30px;
+    }
+/* child selector*/ 
+    footer > h3 {
+        background-color: red;
+    }
+
+    footer > ul > li {
+
+        color: blueviolet;
+    }
+</style> -->
+
+<body>
+    <header>
+        <nav>
+            <ul class="my-ps my-width">
+                <li style="color:rgb(0, 26, 255)">About</li>
+                <li style="color:rgb(255, 0, 144)">Service</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <button onclick="handleColorChange()">press me</button>
+    <button onclick="handleColorChange()">Show Alert</button>
+    <p class="my-ps my-width">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur modi doloremque, laborum neque voluptatem
+        molestias adipisci maxime autem eos nisi quas minima esse, obcaecati quod, eum officiis dicta labore nesciunt.
+        Aperiam cumque non facere harum alias laborum praesentium quisquam tempore nulla fugit dolorum maxime
+        perspiciatis et est iste perferendis, dolor sit culpa possimus eos numquam minima animi! Harum, recusandae quod.
+        Nesciunt, aliquid! Officia repellat mollitia facere neque debitis a quas dolores! Omnis id harum temporibus et,
+        sit architecto quisquam enim beatae voluptatem incidunt alias fuga sed, dignissimos, quam modi at?
+        Numquam exercitationem totam quidem vitae distinctio accusamus veritatis ratione dolorum molestias. Suscipit
+        dolor natus commodi. Mollitia harum libero asperiores dolorem perferendis debitis ut consequuntur iste, aperiam
+        aut aliquid molestiae omnis.
+        Distinctio delectus aperiam mollitia doloremque minus eaque assumenda, dolorum sint iste, consequatur non
+        voluptas rerum officia repellat et possimus minima ab, molestiae nihil dignissimos odit corporis corrupti.
+        Architecto, voluptates eum.
+    </p>
+    <h3>Another h3</h3>
+    <footer>>
+        <h3>Hi Mom this is my css</h3>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
+
+    <script>
+
+        const family = [
+            {
+                dad: true,
+                name: 'Joe',
+                job: 'mechanic',
+            },
+            {
+                kid1: 'Mia',
+                pet: 'fish'
+            }
+
+
+        ]
+        console.log('hey class here is my fam', family)
+
+        document.getElementById('contact').style.color = 'purple'
+
+        const handleColorChange = () => {
+
+            console.log('changing color')
+        }
+    </script src="scripts.js"></script>
+</body>
+
+</html>
